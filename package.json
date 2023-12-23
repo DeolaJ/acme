@@ -9,18 +9,25 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"graphql": "^16.8.1",
 		"graphql-request": "^6.1.0",
 		"next": "^13.5.2",
 		"react": "^18",
-		"react-dom": "^18"
+		"react-dom": "^18",
+		"react-youtube": "^10.1.0",
+		"tailwind-merge": "^2.2.0"
 	},
 	"devDependencies": {
 		"@types/node": "^20",
 		"@types/react": "^18",
 		"@types/react-dom": "^18",
+		"@typescript-eslint/eslint-plugin": "^6.15.0",
+		"@typescript-eslint/parser": "^6.15.0",
 		"autoprefixer": "^10.0.1",
+		"encoding": "^0.1.13",
 		"eslint": "^8",
 		"eslint-config-next": "^13.5.2",
+		"eslint-plugin-import": "^2.29.1",
 		"eslint-plugin-jsx-a11y": "^6.8.0",
 		"postcss": "^8",
 		"prettier": "^3.1.1",
