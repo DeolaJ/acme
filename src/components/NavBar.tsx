@@ -6,7 +6,7 @@ import BareButton from "./button/BareButton";
 
 import { NavLink } from "@/types";
 
-import logo from "../../public/logo.png";
+import logo from "../../public/logo.svg";
 
 function NavBar({ navigationLinks }: { navigationLinks: NavLink[] }) {
     return (
