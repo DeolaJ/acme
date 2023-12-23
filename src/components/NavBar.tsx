@@ -36,6 +36,7 @@ function DesktopMenu({ navigationLinks }: { navigationLinks: NavLink[] }) {
         <ul
             aria-label="Acme navigation menu"
             className="items-center gap-8 hidden list-none md:flex"
+            id="desktop-menu"
         >
             {navigationLinks?.map((navLink) => (
                 <li
@@ -51,7 +52,11 @@ function DesktopMenu({ navigationLinks }: { navigationLinks: NavLink[] }) {
 
 function AuthButtons() {
     return (
-        <ul aria-label="Acme authentication menu" className="flex gap-3 items-center list-none">
+        <ul
+            aria-label="Acme authentication menu"
+            className="flex gap-3 items-center list-none"
+            id="auth-buttons"
+        >
             <li className="hidden md:block">
                 <Link href="#">
                     <BareButton className="hover:text-brand-black-500">Log in</BareButton>
