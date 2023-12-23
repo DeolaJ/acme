@@ -27,7 +27,7 @@ function FeatureSection({ feature, index }: { feature: Feature; index: number })
                 <p className="text-lg leading-7 text-brand-blue-900">{description}</p>
                 {featureButton && (
                     <div className="mt-8">
-                        <Link href={featureButton.url || ""}>
+                        <Link href={featureButton.url || "#"}>
                             <Button size={featureButton.size} className="w-full md:w-auto">
                                 {featureButton.text}
                             </Button>
@@ -42,9 +42,9 @@ function FeatureSection({ feature, index }: { feature: Feature; index: number })
                 } md:row-start-1 md:row-end-2`}
             >
                 <div className="max-w-120 rounded-md w-full overflow-hidden">
-                    {media?.__typename === "FeatureImage" && (
+                    {media?.__typename === "FeatureImage" && media?.image.url && (
                         <Image
-                            src={media?.image.url || ""}
+                            src={media.image.url}
                             alt="Feature image"
                             width={media?.image.width}
                             height={media?.image.height}
