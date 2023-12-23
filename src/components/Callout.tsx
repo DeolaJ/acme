@@ -8,7 +8,7 @@ function CalloutSection({ callout }: { callout: Callout }) {
     const { title, description, calloutButton } = callout;
 
     return (
-        <div className="px-8 w-full">
+        <div className="callout px-8 w-full">
             <div className="p-8 flex flex-col w-full justify-between bg-brand-black-300 rounded-2xl md:flex-row md:p-16">
                 <div className="mb-8 md:mb-0">
                     <h4 className="mb-4 text-3xl font-semibold text-white leading-9.5">{title}</h4>

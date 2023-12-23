@@ -10,7 +10,10 @@ function Footer({ navigationLinks }: { navigationLinks: NavLink[] }) {
                     <p className="text-center order-1 text-base text-brand-blue-300 md:order-0 md:text-left">
                         © {new Date().getFullYear()} Acme Co. All rights reserved.
                     </p>
-                    <ul className="h-10 flex list-none items-start gap-4 md:h-auto md:items-center md:order-1">
+                    <ul
+                        className="h-10 flex list-none items-start gap-4 md:h-auto md:items-center md:order-1"
+                        id="footer-menu"
+                    >
                         {navigationLinks.map((navLink) => (
                             <li
                                 key={navLink.id}

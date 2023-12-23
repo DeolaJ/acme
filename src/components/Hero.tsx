@@ -8,7 +8,7 @@ export default function HeroSection({ heroInfo }: { heroInfo: Hero }) {
     const { title, description, mobileTitle, mobileDescription, actionButtons } = heroInfo;
 
     return (
-        <section className="bg-brand-blue-50">
+        <section className="bg-brand-blue-50" id="hero-section">
             <div className="w-full text-center max-w-240 py-12 px-8 md:py-24 mx-auto">
                 <h1 className="font-semibold text-4xl mb-6 leading-11 md:text-6xl md:leading-18">
                     <span className="hidden md:inline">{title}</span>
