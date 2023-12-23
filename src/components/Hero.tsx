@@ -9,8 +9,8 @@ export default function HeroSection({ heroInfo }: { heroInfo: Hero }) {
 
     return (
         <section className="bg-brand-blue-50">
-            <div className="w-full text-center max-w-240 py-12 md:py-24 px-8 mx-auto">
-                <h1 className="font-semibold text-4xl md:text-6xl leading-11 md:leading-18 mb-6">
+            <div className="w-full text-center max-w-240 py-12 px-8 md:py-24 mx-auto">
+                <h1 className="font-semibold text-4xl mb-6 leading-11 md:text-6xl md:leading-18">
                     <span className="hidden md:inline">{title}</span>
                     <span className="inline md:hidden">{mobileTitle}</span>
                 </h1>
@@ -18,10 +18,10 @@ export default function HeroSection({ heroInfo }: { heroInfo: Hero }) {
                     <span className="hidden md:inline">{description}</span>
                     <span className="inline md:hidden">{mobileDescription}</span>
                 </p>
-                <ul className="w-full md:w-auto flex flex-col list-none justify-center md:flex-row gap-8 md:items-center">
+                <ul className="w-full flex flex-col list-none justify-center gap-8 md:flex-row md:w-auto md:items-center">
                     {actionButtons.map((buttonLink) => (
                         <li key={buttonLink.id}>
-                            <Link href={buttonLink.url || "/#"}>
+                            <Link href={buttonLink.url || "#"}>
                                 <Button size={buttonLink.size} className="w-full md:w-auto">
                                     {buttonLink.text}
                                 </Button>

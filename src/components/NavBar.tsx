@@ -42,7 +42,7 @@ function DesktopMenu({ navigationLinks }: { navigationLinks: NavLink[] }) {
                     key={navLink.id}
                     className="text-brand-blue-900 font-medium hover:text-brand-black-500"
                 >
-                    <Link href={navLink.url || "/#"}>{navLink.text}</Link>
+                    <Link href={navLink.url || "#"}>{navLink.text}</Link>
                 </li>
             ))}
         </ul>
@@ -53,12 +53,12 @@ function AuthButtons() {
     return (
         <ul aria-label="Acme authentication menu" className="flex gap-3 items-center list-none">
             <li className="hidden md:block">
-                <Link href="/#">
+                <Link href="#">
                     <BareButton className="hover:text-brand-black-500">Log in</BareButton>
                 </Link>
             </li>
             <li>
-                <Link href="/#">
+                <Link href="#">
                     <Button>Sign up</Button>
                 </Link>
             </li>

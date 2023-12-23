@@ -15,7 +15,7 @@ function CalloutSection({ callout }: { callout: Callout }) {
                     <p className="text-xl leading-7.5 text-white">{description}</p>
                 </div>
                 <div>
-                    <Link href={calloutButton.url || ""}>
+                    <Link href={calloutButton.url || "#"}>
                         <Button size={calloutButton.size} className="w-full md:w-auto">
                             {calloutButton.text}
                         </Button>

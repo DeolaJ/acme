@@ -17,7 +17,7 @@ function Footer({ navigationLinks }: { navigationLinks: NavLink[] }) {
                                 className="text-base text-brand-blue-300 hover:text-brand-blue-900"
                             >
                                 <Link
-                                    href={navLink.url || ""}
+                                    href={navLink.url || "#"}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
