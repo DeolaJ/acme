@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 export type NavLink = {
     id: string;
     text: string;
@@ -71,4 +73,5 @@ export type Page = {
     headerNavigationLinks: NavLink[];
     sections: Section[];
     footerNavigationLinks: NavLink[];
+    metadata: Metadata;
 };
