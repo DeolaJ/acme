@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 
+import hygraphClient from "@/lib/client";
+import { metadataQuery } from "@/lib/queries";
+
+import { Page } from "@/types";
+
 import "./globals.css";
 
 const inter = Inter({
@@ -17,11 +22,16 @@ const space_grotesk = Space_Grotesk({
     fallback: ["system-ui", "arial"],
 });
 
-// Hardcoded the metadata for the sake of this assessment
-export const metadata: Metadata = {
-    title: "Acme | Build high-performance composable applications",
-    description: `Equip your team with the industry's leading native GraphQL Content APIs, Content Federation capabilities and rich set of developer tools, to build truly composable applications.`,
-};
+export async function generateMetadata(): Promise<Metadata> {
+    const { pages } = await hygraphClient.request<{ pages: Page[] }>(metadataQuery);
+    const metadata = pages[0].metadata;
+
+    // This can be extended for more metadata values
+    return {
+        title: metadata.title,
+        description: metadata.description,
+    };
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (

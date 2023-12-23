@@ -79,3 +79,14 @@ export const pageQuery = gql`
         }
     }
 `;
+
+export const metadataQuery = gql`
+    query MetadataQuery {
+        pages {
+            metadata {
+                description
+                title
+            }
+        }
+    }
+`;
