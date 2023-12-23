@@ -26,6 +26,7 @@ export async function generateMetadata(): Promise<Metadata> {
     const { pages } = await hygraphClient.request<{ pages: Page[] }>(metadataQuery);
     const metadata = pages[0].metadata;
 
+    // This can be extended for more metadata values
     return {
         title: metadata.title,
         description: metadata.description,
