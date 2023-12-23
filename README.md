@@ -37,4 +37,4 @@ To run these tests
 - The `Inter` Google font weights are not consistent with Figma. This causes minor weight discrepancies in the final result.
 - The Youtube embed was modified to use the videoId and start instead of the URL provided because the Hygraph URL type does not accept some special characters.
 - Modified the logo to create a suitable favicon for the website.
-- There were some text and color discrepancies on teh Figma design. For example, the mobile and desktop hero section content are different, and the color of the footer links are not consistent across the boards. I improvised with this.
+- There were some text and color discrepancies on the Figma design. For example, the mobile and desktop hero section content are different, and the color of the footer links are not consistent across the boards. I improvised with this.
