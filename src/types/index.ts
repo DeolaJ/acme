@@ -67,8 +67,6 @@ export type Section = {
 
 export type Page = {
     id: string;
-    title: string;
-    description: string;
     heroSection: Hero;
     headerNavigationLinks: NavLink[];
     sections: Section[];
