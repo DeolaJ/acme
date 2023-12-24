@@ -62,7 +62,6 @@ export const pageQuery = gql`
                     }
                 }
             }
-            description
             footerNavigationLinks {
                 id
                 text
@@ -73,7 +72,6 @@ export const pageQuery = gql`
                 text
                 id
             }
-            title
             updatedAt
             id
         }
